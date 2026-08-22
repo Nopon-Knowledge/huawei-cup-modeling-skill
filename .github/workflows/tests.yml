@@ -1,0 +1,44 @@
+name: Tests
+
+"on":
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: "3.9"
+          - os: ubuntu-latest
+            python: "3.13"
+          - os: macos-latest
+            python: "3.11"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install Poppler on Linux
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes poppler-utils
+
+      - name: Install Poppler on macOS
+        if: runner.os == 'macOS'
+        run: brew install poppler
+
+      - name: Run regression tests
+        run: python3 -m unittest discover -s huawei-cup-modeling/tests -v

@@ -1,0 +1,4 @@
+interface:
+  display_name: "华为杯研究生数模助手"
+  short_description: "辅助华为杯研究生数模规则核验、建模协作、论文整合与提交审计"
+  default_prompt: "使用 $huawei-cup-modeling 帮我处理这次华为杯任务：先判断所处模式与规则状态，再基于我提供的材料给出当前最小可执行下一步。"
