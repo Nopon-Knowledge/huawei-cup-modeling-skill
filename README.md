@@ -1,109 +1,107 @@
 <p align="center">
-  <img src="assets/readme-banner.svg" alt="华为杯研究生数学建模竞赛辅助 Skill" width="100%" />
+  <a href="assets/readme-banner.svg"><img src="assets/readme-banner.svg" alt="从问题出发，让结论可复现。华为杯研究生数模助手：规则、模型、论文与提交。" width="960" /></a>
 </p>
 
-<h1 align="center">华为杯研究生数学建模竞赛辅助 Skill</h1>
+<h1 align="center">华为杯研究生数模助手</h1>
+
+<p align="center">
+  面向中国研究生数学建模竞赛的中文 Skill<br />
+  <strong>核验规则 · 建立基线 · 验证结果 · 整合论文 · 审计提交</strong>
+</p>
 
 <p align="center">
   <a href="https://github.com/Nopon-Knowledge/huawei-cup-modeling-skill/actions/workflows/tests.yml"><img src="https://github.com/Nopon-Knowledge/huawei-cup-modeling-skill/actions/workflows/tests.yml/badge.svg" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&amp;logoColor=white" alt="Python 3.9+" />
-  <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux-5f6f7f" alt="macOS and Linux" />
-  <img src="https://img.shields.io/badge/Codex-Skill-111827" alt="Codex Skill" />
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-f2c94c" alt="MIT License" /></a>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-2563EB?logo=python&amp;logoColor=white" alt="Python 3.9+" />
+  <img src="https://img.shields.io/badge/Codex-Skill-172B4D" alt="Codex Skill" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0F766E" alt="MIT License" /></a>
 </p>
 
 <p align="center">
-  面向 Codex 与 ChatGPT 桌面端的中文竞赛辅助 Skill。<br />
-  把规则核验、建模协作、论文整合与提交审计串成一条可复核的工作流。
-</p>
-
-<p align="center">
-  <a href="#快速安装">快速安装</a> ·
-  <a href="#能力地图">能力地图</a> ·
-  <a href="#竞赛工作流">竞赛工作流</a> ·
-  <a href="#脚本工具">脚本工具</a> ·
-  <a href="#安全边界">安全边界</a>
+  <a href="#快速开始">快速开始</a> &nbsp;·&nbsp;
+  <a href="#竞赛工作流">竞赛工作流</a> &nbsp;·&nbsp;
+  <a href="#图表与论文">图表与论文</a> &nbsp;·&nbsp;
+  <a href="#脚本工具">脚本工具</a> &nbsp;·&nbsp;
+  <a href="#使用边界">使用边界</a>
 </p>
 
 ---
 
-## 项目定位
+把分散的竞赛工作串起来：从带来源的规则快照，到能运行的模型、可追溯的图表，再到锁稿后的文件核验。队伍始终主导选题、假设与结论，Skill 帮助组织过程、检查证据、减少遗漏。
 
-数模竞赛的风险往往不只来自“模型不会做”，还来自规则误读、分工失控、结果不可追溯、论文数字漂移和提交文件出错。本项目把这些薄弱环节固化为可执行、可检查的流程。
+<table align="center">
+  <tr>
+    <th align="center" width="280">规则有据</th>
+    <th align="center" width="280">结果可查</th>
+    <th align="center" width="280">交付有序</th>
+  </tr>
+  <tr>
+    <td align="center">核验规则<br />标注缺口</td>
+    <td align="center">跑通基线<br />追溯结果</td>
+    <td align="center">统一图表<br />复核提交</td>
+  </tr>
+</table>
 
-| 常见风险 | 本项目的处理方式 | 产出 |
-| --- | --- | --- |
-| 把往届经验当作当届规则 | 分离官方规则、待发布信息与往届先例 | 带来源和核验日期的规则快照 |
-| 模型能跑但无法复现 | 先做完整基线，再记录数据、参数和实验 | 可追溯的实验与结果账本 |
-| 三人协作互相等待 | 提供角色分工、检查点、时间线与降级策略 | 可执行的 100 小时作战计划 |
-| 论文数字前后不一致 | 统一结果来源，明确图表、正文和附件的对应关系 | 可审计的论文证据链 |
-| 上传前才发现格式问题 | 对 PDF、文件名、体积、身份词和哈希做机械预检 | 提交清单与锁稿哈希 |
+## 快速开始
 
-## 能力地图
+### 1. 安装 Skill
 
-| 场景 | Skill 会做什么 | 关键边界 |
-| --- | --- | --- |
-| 规则查询 | 核验当届官网、附件与校内通知，标记信息状态 | 不把推测写成硬性要求 |
-| 赛前准备 | 设计分工、目录、账本、里程碑和应急降级 | 不预设尚未公布的阈值 |
-| 公开往届题 | 拆题、设计基线、评价指标与稳健性实验 | 明确这是训练场景 |
-| 实时赛题 | 先核验当届 AI 使用规定，再按允许范围协助 | 规则不明时不生成核心提交内容 |
-| 论文整合 | 对齐假设、符号、模型、结果、图表和结论 | 不虚构数据、文献或运行结果 |
-| 提交审计 | 检查结构、命名、大小、匿名信息与文件哈希 | 机械检查不能替代人工逐页复核 |
-
-## 快速安装
-
-### 方式一：通过 Skill Installer
-
-在 Codex 中调用内置的 `$skill-installer`，从本仓库子目录安装：
+在 Codex 中发送：
 
 ```text
 使用 $skill-installer 从下面的 GitHub 路径安装 huawei-cup-modeling：
 https://github.com/Nopon-Knowledge/huawei-cup-modeling-skill/tree/main/huawei-cup-modeling
 ```
 
-### 方式二：复制到本地
+<details>
+<summary><strong>手动安装与目录说明</strong></summary>
 
-将 `huawei-cup-modeling/` 复制到以下任一位置：
+也可以把仓库中的整个 `huawei-cup-modeling/` 文件夹复制到以下任一位置，保留其中的脚本和参考资料。
 
-| 安装范围 | 目录 |
-| --- | --- |
-| 当前仓库 | `.agents/skills/huawei-cup-modeling/` |
-| 个人全局 | `~/.agents/skills/huawei-cup-modeling/` |
+<table align="center">
+  <tr><th align="center">安装范围</th><th align="center">目录</th></tr>
+  <tr><td>当前仓库</td><td><code>.agents/skills/huawei-cup-modeling/</code></td></tr>
+  <tr><td>个人全局</td><td><code>~/.agents/skills/huawei-cup-modeling/</code></td></tr>
+</table>
 
-Codex 会自动检测 Skill 变更；若未出现，可重启 Codex。目录位置与调用方式以 [OpenAI Skills 官方文档](https://learn.chatgpt.com/docs/build-skills)为准。
+Codex 会自动检测 Skill 变更；若未出现，可重启。目录位置与调用方式见 [OpenAI Skills 官方文档](https://learn.chatgpt.com/docs/build-skills)。
 
-安装后，可以从一次规则核验开始：
+</details>
+
+### 2. 从一个具体任务开始
 
 ```text
-$huawei-cup-modeling 帮我核对 2026 华为杯报名、赛程、AI 使用规则，
-并区分“已确认”“尚未发布”和“仅有往届先例”的信息。
+$huawei-cup-modeling 帮我核对 2026 华为杯报名、赛程和 AI 使用规则，
+区分已确认、尚未发布和仅有往届先例的信息，并附上来源与核验日期。
 ```
 
-<details>
-<summary><strong>查看更多调用示例</strong></summary>
+Skill 会先识别任务阶段、整理已有材料，再给出当前可执行的下一步。以上为 Codex 调用方式；在 ChatGPT 桌面端可用 `@` 选择已安装的 Skill，详见 [官方文档](https://learn.chatgpt.com/docs/build-skills)。
 
-公开往届题训练：
+<details>
+<summary><strong>更多示例：往届题训练、三人协作、图表润色、提交审计</strong></summary>
+
+**公开往届题训练**
 
 ```text
 $huawei-cup-modeling 这是已经公开的往届赛题。
-请先拆解子问题，再设计一条能完整运行的可复现基线。
+请拆解子问题、明确评价指标，设计一条覆盖全题的可复现基线。
 ```
 
-竞赛期间规划：
+**三人团队规划**
 
 ```text
-$huawei-cup-modeling 根据当届已核验规则，为三人队制定 100 小时计划，
-给出角色分工、关键检查点和模型失败时的降级方案。
+$huawei-cup-modeling 根据当届已核验规则，为三人队制定竞赛计划，
+给出角色分工、关键检查点、锁稿缓冲和模型失败时的降级方案。
 ```
 
-论文一致性审计：
+**图表与论文润色**
 
 ```text
-$huawei-cup-modeling 检查论文中的符号、假设、图表和结论是否一致，
-逐项指出缺少来源、实验记录或结果证据的位置。
+$huawei-cup-modeling 请基于保存的实验输出优化这些论文图表：
+统一字体、配色、单位和有效数字，居中排版，并检查最终 PDF 的可读性。
+保留原始数值，指出缺少实验记录或来源的位置。
 ```
 
-提交前审计：
+**提交前审计**
 
 ```text
 $huawei-cup-modeling 审计这份最终 PDF；
@@ -114,24 +112,38 @@ $huawei-cup-modeling 审计这份最终 PDF；
 
 ## 竞赛工作流
 
-```mermaid
-flowchart LR
-    A[核验当届规则] --> B{是否为实时赛题}
-    B -- 否 --> D[拆解问题与评价指标]
-    B -- 是 --> C[确认 AI 允许范围]
-    C --> D
-    D --> E[建立完整可运行基线]
-    E --> F[敏感性与稳健性验证]
-    F --> G[同步结果账本与论文]
-    G --> H[PDF 与附件预检]
-    H --> I[锁稿、哈希与上传复核]
-```
+先核验规则，再建立覆盖全题的基线；有了验证证据，再整合论文和锁定文件。**实时赛题须先确认当届 AI 允许范围**，各阶段按已核验规则执行。
 
-这条流程强调三个原则：先确认边界，再产出内容；先完成闭环，再追求复杂度；每个结论都能回到数据、代码或实验记录。
+<p align="center">
+  <a href="assets/readme-workflow.svg"><img src="assets/readme-workflow.svg" alt="五阶段竞赛工作流：规则核验→问题拆解与基线→模型比较与验证→图表与论文整合→预检、锁稿与上传复核。实时赛题先核验 AI 允许范围，范围不明时仅核对规则与机械检查。" width="800" /></a>
+</p>
+<p align="center"><sub>每一阶段都有对应产物；发现问题时回到相应阶段修正。点击图可查看原图。</sub></p>
+
+三人分工、100 小时参考时间线、五个检查点和模型降级策略，见 [竞赛执行指南](huawei-cup-modeling/references/contest-operations.md)。时间安排是可调整的参考，赛程以当届公告为准。
+
+## 图表与论文
+
+**图表既要清楚，也要有据可查。** 从保存的实验结果生成图表，关联结果账本，再引用到正文和摘要，让每个定量结论都能回到一次具体运行。
+
+<p align="center">
+  <a href="assets/readme-evidence.svg"><img src="assets/readme-evidence.svg" alt="论文证据链：数据与代码通过 run_id 对应实验输出，输出中的数值经复核后通过 claim_id 对应论文图表、正文与摘要；数字不一致时回查来源重新生成。" width="800" /></a>
+</p>
+<p align="center"><sub>从数据到结论保留来源；复核后的同一结果，使用一致的单位、精度与表述。</sub></p>
+
+<table align="center">
+  <tr><th align="center">维度</th><th align="center">交付标准</th></tr>
+  <tr><td><strong>选图</strong></td><td>围绕一个比较或结论选图；坐标、单位、图例、误差含义完整。</td></tr>
+  <tr><td><strong>样式</strong></td><td>统一字体、字号和配色；颜色搭配线型或标记，缩小后仍可辨认。</td></tr>
+  <tr><td><strong>居中</strong></td><td>图与表相对正文版心居中，多子图成组对齐；题注遵循官方模板。</td></tr>
+  <tr><td><strong>导出</strong></td><td>统计图优先矢量格式；位图按最终尺寸导出，检查字体和边缘裁切。</td></tr>
+  <tr><td><strong>溯源</strong></td><td>保留源数据、绘图脚本和运行标识；正文、摘要与图表数字一致。</td></tr>
+</table>
+
+图型选择、配色建议、Markdown / Word / LaTeX 居中方式和导出检查，见 [图表与排版指南](huawei-cup-modeling/references/figures-and-tables.md)；写作与逐层审计见 [论文整合指南](huawei-cup-modeling/references/paper-and-compliance.md)。
 
 ## 脚本工具
 
-仓库提供两个无第三方 Python 依赖的辅助脚本。
+提供两个无第三方 Python 依赖的本地辅助脚本。以下命令在仓库根目录执行，**全大写参数值需要替换**为真实路径或已核验条件。
 
 ### 初始化竞赛工作区
 
@@ -141,7 +153,7 @@ python3 huawei-cup-modeling/scripts/init_competition_workspace.py TEAM_WORKSPACE
   --title "项目名称"
 ```
 
-脚本会生成规则快照、来源账本、实验账本、AI 使用日志、时间线和提交清单等基础文件，并避免覆盖已有内容。
+生成规则快照目录、数据与图表目录、来源 / 实验 / 结果账本、AI 使用日志和提交清单，并保留已有文件。三人分工与时间安排按 [竞赛执行指南](huawei-cup-modeling/references/contest-operations.md)制定。
 
 ### 提交前预检
 
@@ -155,92 +167,99 @@ python3 huawei-cup-modeling/scripts/preflight_submission.py PAPER.pdf \
   --manifest HASH_REPORT.json
 ```
 
-它可以检查 PDF 结构、文件名、字节大小、指定页后的身份关键词，并生成 MD5 与 SHA-256 清单。锁稿后可用清单验证上传文件是否发生变化。
+检查 PDF 结构、文件名、字节大小和指定页后的身份关键词，生成 MD5 与 SHA-256 清单。年度条件来自当届官方公告；若官方只写 MB 而未说明换算方式，应记录采用的约定，并把字节检查视为保守筛查。
 
-年度条件必须来自当届官方公告。若官方只给出 MB 而未说明换算方式，请记录采用的换算约定，并把字节检查视为保守筛查。
+<details>
+<summary><strong>锁稿后验证文件是否变化</strong></summary>
 
-## 安全边界
+```bash
+python3 huawei-cup-modeling/scripts/preflight_submission.py PAPER.pdf \
+  --expected-md5 RECORDED_MD5 \
+  --strict
+```
 
-| 本项目会坚持 | 本项目不会做 |
-| --- | --- |
-| 区分当届规则、待发布信息和往届先例 | 把经验帖或未公开阈值冒充官方规则 |
-| 明示来源、不确定性和最后核验日期 | 虚构数据、实验、文献或代码运行结果 |
-| 在实时赛题前先确认 AI 使用范围 | 规则未核验时生成核心模型或可提交正文 |
-| 把脚本结果描述为辅助证据 | 把机械预检包装成完整合规证明 |
-| 提供过程检查与风险提示 | 承诺获奖、提交成功或一定合规 |
+提交 MD5 后冻结对应字节文件；上传前核验同一文件，不再编辑、压缩或重导出。预检清单不覆盖已有文件，重做时使用新文件名。
 
-### 数据与隐私
-
-- 两个 Python 脚本自身不联网。通过 Codex 使用 Skill 时，提示词和材料可能由用户配置的 AI 服务处理，请遵守相应的数据控制与保留政策。
-- 初始化脚本生成的 `.gitignore` 默认忽略赛题、数据、代码、实验、论文、日志和提交目录。忽略规则不是访问控制，正式比赛材料仍应保存在受控位置。
-- AI 使用日志只记录必要摘要，不保存与任务无关的完整对话；公开日志前必须脱敏。
-- 预检清单默认不记录绝对路径或身份词原文，但会包含文件名、大小、修改时间和文件哈希。它可能构成未公开论文的指纹，比赛期间不要公开。
-- MD5 仅用于赛事要求的字节锁定流程，不应视为安全哈希；脚本同时记录 SHA-256 作为补充完整性证据。
+</details>
 
 ## 环境与质量
 
-| 项目 | 状态 |
-| --- | --- |
-| Python | 3.9 或更高版本 |
-| 平台 | macOS、Linux |
-| Python 第三方依赖 | 无 |
-| PDF 结构检查 | Poppler `pdfinfo` |
-| 身份文本扫描 | Poppler `pdftotext` |
-| 自动化测试 | GitHub Actions + `unittest` |
+<table align="center">
+  <tr><th align="center">环境</th><th align="center">要求 / 用途</th></tr>
+  <tr><td>Python 3.9+</td><td>运行脚本；无需第三方 Python 包</td></tr>
+  <tr><td>macOS / Linux</td><td>GitHub Actions 覆盖的平台</td></tr>
+  <tr><td>Poppler · <code>pdfinfo</code></td><td>PDF 结构检查</td></tr>
+  <tr><td>Poppler · <code>pdftotext</code></td><td>身份关键词文本扫描</td></tr>
+</table>
 
-缺少 Poppler 时脚本会提示未完成的检查；启用 `--strict` 后，这类检查会被视为失败。Poppler 由用户独立安装并按其自身许可证提供，本仓库不捆绑其二进制。
-
-运行回归测试：
+Poppler 需独立安装，本仓库不捆绑其二进制。工具缺失时，脚本会提示未完成的检查；启用 `--strict` 后，这类检查会被视为失败。
 
 ```bash
 python3 -m unittest discover -s huawei-cup-modeling/tests -v
 ```
 
-当前测试覆盖初始化回滚、符号链接与硬链接防覆盖、已有清单保护、年度参数、字节边界、PDF 结构、身份词扫描和哈希验证。
+测试覆盖初始化回滚、链接防覆盖、已有清单保护、年度参数、字节边界、PDF 结构、身份词扫描和哈希验证。
 
 <details>
-<summary><strong>查看项目结构</strong></summary>
+<summary><strong>项目结构与资料入口</strong></summary>
 
 ```text
-huawei-cup-modeling/
-├── SKILL.md
-├── agents/
-│   └── openai.yaml
-├── references/
-│   ├── current-rules.md
-│   ├── contest-operations.md
-│   └── paper-and-compliance.md
-├── scripts/
-│   ├── init_competition_workspace.py
-│   └── preflight_submission.py
-└── tests/
-    └── test_scripts.py
+.
+├── README.md
+├── assets/                         # README 矢量封面与图示
+└── huawei-cup-modeling/
+    ├── SKILL.md                     # 任务路由与核心约束
+    ├── agents/openai.yaml           # 界面元数据
+    ├── references/
+    │   ├── current-rules.md         # 带核验日期的年度快照
+    │   ├── contest-operations.md    # 分工、时间线与检查点
+    │   ├── figures-and-tables.md    # 图表质量、居中与导出
+    │   └── paper-and-compliance.md  # 论文、引用与提交审计
+    ├── scripts/
+    │   ├── init_competition_workspace.py
+    │   └── preflight_submission.py
+    └── tests/test_scripts.py
 ```
 
 </details>
 
-## 规则维护与贡献
+## 使用边界
 
-`references/current-rules.md` 是带核验日期的年度快照，不是永久规则。更新时请：
+当届官方公告和附件优先，缓存快照用于定位检查项。实时赛题的 AI 规定或允许范围无法核验时，Skill 仅协助规则核对、材料整理和非实质性机械检查。数据、实验、文献与运行结果必须真实，关键假设和最终结论由队伍理解并确认。
 
-1. 只采用竞赛官网、当届正式附件或培养单位的校内通知；
-2. 区分已确认要求、尚未发布内容和往届先例；
-3. 保留来源链接、发布日期和最后核验日期；
-4. 为脚本参数变化补充回归测试；
-5. 不提交实时竞赛中的未公开题目、论文、数据或队内材料。
+脚本提供辅助证据，完整的模板、匿名和视觉版式仍需人工逐页复核。
 
-欢迎通过 Issue 或 Pull Request 提交规则更新、脚本修复和工作流改进。贡献内容不得包含实时未公开赛题、队内论文或数据、真实身份、完整 AI 对话、官方模板或 Logo，以及无权再授权的论文与代码。
+<details>
+<summary><strong>数据、隐私与哈希说明</strong></summary>
 
-## 免责声明
+- 两个 Python 脚本自身不联网。通过 Codex 使用 Skill 时，材料可能由用户配置的 AI 服务处理，应遵守相应的数据控制与保留政策。
+- 初始化工作区的 `.gitignore` 默认忽略竞赛材料目录。忽略规则不是访问控制，正式比赛材料仍应保存在受控位置。
+- AI 使用日志只记录必要摘要，公开前须脱敏；不保存无关的完整对话。
+- 哈希清单默认隐藏绝对路径与身份词原文，但仍含文件名、大小、时间和文件哈希，比赛期间不要公开。
+- MD5 用于赛事要求的字节锁定流程，SHA-256 提供补充完整性证据；MD5 不作为安全哈希使用。
+
+</details>
+
+## 维护与贡献
+
+[年度规则快照](huawei-cup-modeling/references/current-rules.md)需要持续核验。更新时采用竞赛官网、当届正式附件或培养单位通知，保留来源链接、发布日期和核验日期，明确区分已确认、尚未发布与往届先例。脚本参数变化应补充相应回归测试。
+
+欢迎通过 [Issue](https://github.com/Nopon-Knowledge/huawei-cup-modeling-skill/issues) 或 Pull Request 提交规则更新、脚本修复和工作流改进。贡献内容不得包含实时未公开赛题、队内论文或数据、真实身份、完整 AI 对话、官方模板或 Logo，以及无权再授权的论文与代码。
+
+<details>
+<summary><strong>独立项目声明与许可证</strong></summary>
 
 本项目是独立的开源辅助工具，与华为、中国研究生数学建模竞赛组委会、承办单位及研创网不存在隶属、授权或背书关系。“华为杯”等名称及相关商标归其权利人所有。
 
-仓库中的规则摘要仅用于帮助定位检查项，不能替代当届官方公告、附件和系统提示，也不构成法律或竞赛合规意见。项目不保证规则始终准确及时，也不保证匿名、模板、原创性、提交成功、获奖或 AI 使用一定被允许。人工逐页检查和官网复核不可替代。
+规则摘要用于定位检查项，不能替代当届官方公告、附件和系统提示，也不构成法律或竞赛合规意见。项目不保证规则始终准确及时，不保证匿名、模板、原创性、提交成功、获奖或 AI 使用一定被允许。
 
-项目原创代码与文档采用 [MIT License](LICENSE)。外部链接、官方文件、赛事名称和商标的权利仍归各自权利人所有。
+项目原创代码与文档采用 [MIT License](LICENSE)。外部链接、官方文件、赛事名称和商标的权利仍归各自权利人所有。Poppler 按其自身许可证提供。
+
+</details>
 
 ---
 
 <p align="center">
-  <sub>先核验规则，再建立基线；让每个结论都能被复现，让每次提交都有迹可循。</sub>
+  <strong>让每个结论有据可查，让每次交付有迹可循。</strong><br />
+  <sub>规则有来源 · 模型可复现 · 图表可读 · 提交可核验</sub>
 </p>

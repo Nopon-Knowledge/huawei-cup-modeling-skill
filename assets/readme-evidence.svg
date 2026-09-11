@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="348" viewBox="0 0 820 348" role="img" aria-labelledby="title desc">
+  <title id="title">让论文中的每个数字，都能找到来源</title>
+  <desc id="desc">数据与代码通过 run_id 对应实验输出，复核后的结果通过 claim_id 对应论文图表、正文与摘要。数字不一致时，回查实验输出与来源。</desc>
+  <style>
+    @media (max-width: 600px) {
+      text[font-size="21"] { font-size: 28px; }
+      text[font-size="16"] { font-size: 18px; }
+      text[font-size="15"] { font-size: 18px; }
+      text[font-size="14"] { font-size: 18px; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="m2 2 5 3-5 3" fill="none" stroke="#8296AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="818" height="346" rx="20" fill="#F6F8FC" stroke="#DCE4EF"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+    <text x="410" y="46" text-anchor="middle" font-size="24" font-weight="650" fill="#172B4D">让论文中的每个数字，都能找到来源</text>
+    <text x="410" y="74" text-anchor="middle" font-size="16" fill="#5B6D83">来源可定位 · 过程可复现 · 结论可复核</text>
+    <g fill="none" stroke="#8296AF" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M260 182H296"/><path d="M520 182H556"/>
+      <path d="M670 268V302H150V272" stroke-dasharray="5 5"/>
+    </g>
+    <g>
+      <rect x="40" y="102" width="220" height="166" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <rect x="40" y="102" width="220" height="5" rx="2.5" fill="#2563EB"/>
+      <text x="150" y="143" text-anchor="middle" font-size="21" font-weight="650" fill="#172B4D">数据与代码</text>
+      <text x="150" y="174" text-anchor="middle" font-size="16" fill="#5B6D83">输入版本 / 参数 / 命令</text>
+      <text x="150" y="199" text-anchor="middle" font-size="15" fill="#5B6D83">保留可复现入口</text>
+      <rect x="86" y="220" width="128" height="28" rx="7" fill="#EFF4FF"/>
+      <text x="150" y="239" text-anchor="middle" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" fill="#2456B6">run_id</text>
+    </g>
+    <g>
+      <rect x="300" y="102" width="220" height="166" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <rect x="300" y="102" width="220" height="5" rx="2.5" fill="#0F766E"/>
+      <text x="410" y="143" text-anchor="middle" font-size="21" font-weight="650" fill="#172B4D">实验与结果</text>
+      <text x="410" y="174" text-anchor="middle" font-size="16" fill="#5B6D83">输出文件 / 指标 / 单位</text>
+      <text x="410" y="199" text-anchor="middle" font-size="15" fill="#5B6D83">复核后登记结论</text>
+      <rect x="346" y="220" width="128" height="28" rx="7" fill="#EAF6F3"/>
+      <text x="410" y="239" text-anchor="middle" font-family="ui-monospace, 'SFMono-Regular', Consolas, monospace" font-size="14" fill="#0F766E">claim_id</text>
+    </g>
+    <g>
+      <rect x="560" y="102" width="220" height="166" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <rect x="560" y="102" width="220" height="5" rx="2.5" fill="#172B4D"/>
+      <text x="670" y="143" text-anchor="middle" font-size="21" font-weight="650" fill="#172B4D">图表与论文</text>
+      <text x="670" y="174" text-anchor="middle" font-size="16" fill="#5B6D83">图表编号 / 正文 / 摘要</text>
+      <text x="670" y="199" text-anchor="middle" font-size="15" fill="#5B6D83">统一精度与结论表述</text>
+      <rect x="606" y="220" width="128" height="28" rx="7" fill="#EDF1F7"/>
+      <text x="670" y="239" text-anchor="middle" font-size="14" fill="#425B7B">同一结果来源</text>
+    </g>
+    <rect x="257" y="287" width="306" height="30" rx="8" fill="#F6F8FC"/>
+    <text x="410" y="308" text-anchor="middle" font-size="15" fill="#52647F">数字不一致时，回查输出与来源</text>
+  </g>
+</svg>

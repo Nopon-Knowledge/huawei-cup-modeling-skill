@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="692" viewBox="0 0 820 692" role="img" aria-labelledby="title desc">
+  <title id="title">从规则核验到最终交付</title>
+  <desc id="desc">五个阶段依次为规则核验、问题拆解与基线、模型比较与验证、图表与论文整合、预检锁稿与上传。每阶段附交付物。实时赛题先核验 AI 允许范围，规则不明时仅核对规则与机械检查。</desc>
+  <style>
+    @media (max-width: 600px) {
+      text[font-size="21"] { font-size: 28px; }
+      text[font-size="16"] { font-size: 19px; }
+      text[font-size="13"] { font-size: 15px; }
+    }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="m1 1 4 3-4 3" fill="none" stroke="#8FA6BC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="818" height="690" rx="20" fill="#F6F8FC" stroke="#DCE4EF"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+    <text x="410" y="46" text-anchor="middle" fill="#172B4D" font-size="26" font-weight="650">从规则核验到最终交付</text>
+    <text x="410" y="76" text-anchor="middle" fill="#5B6D83" font-size="16">五个阶段 · 每一步都有可复核的产物</text>
+    <g fill="none" stroke="#A6B7C9" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M70 166V236"/><path d="M70 280V338"/><path d="M70 382V440"/><path d="M70 484V542"/>
+    </g>
+    <g>
+      <circle cx="70" cy="146" r="20" fill="#2563EB"/>
+      <text x="70" y="152" text-anchor="middle" font-size="16" font-weight="600" fill="#FFF">01</text>
+      <rect x="112" y="104" width="664" height="84" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <text x="136" y="136" font-size="21" font-weight="650" fill="#172B4D">规则核验</text>
+      <text x="136" y="164" font-size="16" fill="#5B6D83">核验届次、来源与 AI 使用范围</text>
+      <rect x="560" y="118" width="196" height="56" rx="8" fill="#EFF4FF"/>
+      <text x="658" y="140" text-anchor="middle" font-size="16" font-weight="600" fill="#2456B6">规则快照</text>
+      <text x="658" y="160" text-anchor="middle" font-size="13" fill="#526A94">已确认项 / 待确认项</text>
+    </g>
+    <text x="128" y="207" font-size="12" fill="#526A94">实时赛题：确认允许范围后继续 ↓</text>
+    <g>
+      <circle cx="70" cy="260" r="20" fill="#2563EB"/>
+      <text x="70" y="266" text-anchor="middle" font-size="16" font-weight="600" fill="#FFF">02</text>
+      <rect x="112" y="218" width="664" height="84" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <text x="136" y="250" font-size="21" font-weight="650" fill="#172B4D">问题拆解与基线</text>
+      <text x="136" y="278" font-size="16" fill="#5B6D83">明确输入输出，先跑通所有子问题</text>
+      <rect x="560" y="232" width="196" height="56" rx="8" fill="#EFF4FF"/>
+      <text x="658" y="254" text-anchor="middle" font-size="16" font-weight="600" fill="#2456B6">可运行基线</text>
+      <text x="658" y="274" text-anchor="middle" font-size="13" fill="#526A94">问题契约 / 评价指标</text>
+    </g>
+    <g>
+      <circle cx="70" cy="362" r="20" fill="#0F766E"/>
+      <text x="70" y="368" text-anchor="middle" font-size="16" font-weight="600" fill="#FFF">03</text>
+      <rect x="112" y="320" width="664" height="84" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <text x="136" y="352" font-size="21" font-weight="650" fill="#172B4D">模型比较与验证</text>
+      <text x="136" y="380" font-size="16" fill="#5B6D83">基线对照、误差分析与稳健性检查</text>
+      <rect x="560" y="334" width="196" height="56" rx="8" fill="#EAF6F3"/>
+      <text x="658" y="356" text-anchor="middle" font-size="16" font-weight="600" fill="#0F766E">实验与结果账本</text>
+      <text x="658" y="376" text-anchor="middle" font-size="13" fill="#426F69">运行记录 / 复核证据</text>
+    </g>
+    <g>
+      <circle cx="70" cy="464" r="20" fill="#0F766E"/>
+      <text x="70" y="470" text-anchor="middle" font-size="16" font-weight="600" fill="#FFF">04</text>
+      <rect x="112" y="422" width="664" height="84" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <text x="136" y="454" font-size="21" font-weight="650" fill="#172B4D">图表与论文整合</text>
+      <text x="136" y="482" font-size="16" fill="#5B6D83">从保存结果生成图表，对齐全文数字</text>
+      <rect x="560" y="436" width="196" height="56" rx="8" fill="#EAF6F3"/>
+      <text x="658" y="458" text-anchor="middle" font-size="16" font-weight="600" fill="#0F766E">论文与定稿图表</text>
+      <text x="658" y="478" text-anchor="middle" font-size="13" fill="#426F69">居中排版 / 逐页审阅</text>
+    </g>
+    <g>
+      <circle cx="70" cy="566" r="20" fill="#172B4D"/>
+      <text x="70" y="572" text-anchor="middle" font-size="16" font-weight="600" fill="#FFF">05</text>
+      <rect x="112" y="524" width="664" height="84" rx="12" fill="#FFF" stroke="#DCE4EF"/>
+      <text x="136" y="556" font-size="21" font-weight="650" fill="#172B4D">预检、锁稿与上传</text>
+      <text x="136" y="584" font-size="16" fill="#5B6D83">登记 MD5 后保持文件字节不变</text>
+      <rect x="560" y="538" width="196" height="56" rx="8" fill="#EDF1F7"/>
+      <text x="658" y="560" text-anchor="middle" font-size="16" font-weight="600" fill="#172B4D">哈希清单与回执</text>
+      <text x="658" y="580" text-anchor="middle" font-size="13" fill="#52647F">文件核验 / 上传复核</text>
+    </g>
+    <rect x="44" y="634" width="732" height="34" rx="8" fill="#EAF0F8"/>
+    <text x="410" y="656" text-anchor="middle" font-size="14" fill="#425B7B">实时赛题规则不明时，仅核对规则与机械检查；具体赛程以当届公告为准。</text>
+  </g>
+</svg>

@@ -1,76 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-  <title id="title">华为杯研究生数学建模竞赛辅助 Skill</title>
-  <desc id="desc">以规则核验、可复现建模、论文整合和提交审计为核心的竞赛辅助工作流</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
+  <title id="title">华为杯研究生数模助手</title>
+  <desc id="desc">从问题出发，让结论可复现。连接规则核验、建模验证、论文整合与提交审计的竞赛工作流。</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#071426"/>
-      <stop offset="0.55" stop-color="#0b2340"/>
-      <stop offset="1" stop-color="#102f45"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10213C"/>
+      <stop offset="1" stop-color="#173D53"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#55d6be"/>
-      <stop offset="1" stop-color="#7aa7ff"/>
-    </linearGradient>
-    <radialGradient id="glow">
-      <stop offset="0" stop-color="#55d6be" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#55d6be" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" fill="none" stroke="#b8d8ef" stroke-opacity="0.07"/>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#CADAEF" stroke-opacity=".055"/>
     </pattern>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#020711" flood-opacity="0.36"/>
-    </filter>
   </defs>
-
-  <rect width="1200" height="360" rx="28" fill="url(#background)"/>
-  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
-  <circle cx="1010" cy="78" r="255" fill="url(#glow)"/>
-  <circle cx="112" cy="325" r="180" fill="url(#glow)" opacity="0.45"/>
-
-  <g font-family="Inter, PingFang SC, Microsoft YaHei, system-ui, sans-serif">
-    <rect x="72" y="54" width="162" height="30" rx="15" fill="#55d6be" fill-opacity="0.13" stroke="#55d6be" stroke-opacity="0.42"/>
-    <circle cx="91" cy="69" r="5" fill="#55d6be"/>
-    <text x="106" y="75" fill="#a7f3e5" font-size="14" font-weight="600" letter-spacing="1.2">CODEX SKILL</text>
-
-    <text x="72" y="142" fill="#f5f9ff" font-size="45" font-weight="750" letter-spacing="1">华为杯研究生数模助手</text>
-    <text x="74" y="184" fill="#b8cde0" font-size="19" letter-spacing="1.2">规则核验 · 可复现建模 · 论文整合 · 提交审计</text>
-
-    <g font-size="14" font-weight="600">
-      <rect x="72" y="228" width="132" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.12"/>
-      <text x="91" y="251" fill="#dce9f5">年度规则隔离</text>
-      <rect x="218" y="228" width="132" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.12"/>
-      <text x="237" y="251" fill="#dce9f5">结果证据链</text>
-      <rect x="364" y="228" width="132" height="36" rx="18" fill="#ffffff" fill-opacity="0.07" stroke="#ffffff" stroke-opacity="0.12"/>
-      <text x="383" y="251" fill="#dce9f5">锁稿与哈希</text>
-    </g>
-
-    <text x="73" y="310" fill="#7f9bb2" font-size="13" letter-spacing="0.7">A reproducible workflow for graduate mathematical modeling competitions</text>
-
-    <g filter="url(#shadow)">
-      <rect x="755" y="48" width="373" height="264" rx="24" fill="#0a192b" fill-opacity="0.88" stroke="#8fb9d8" stroke-opacity="0.18"/>
-      <circle cx="785" cy="76" r="5" fill="#ff7b72"/>
-      <circle cx="804" cy="76" r="5" fill="#f2cc60"/>
-      <circle cx="823" cy="76" r="5" fill="#56d364"/>
-
-      <text x="793" y="132" fill="#e9f3ff" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">min f(x)</text>
-      <text x="793" y="163" fill="#7aa7ff" font-size="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">s.t.</text>
-      <text x="846" y="163" fill="#b7c9dc" font-size="15" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">g(x) ≤ 0</text>
-
-      <line x1="793" y1="240" x2="1082" y2="240" stroke="#59738a" stroke-opacity="0.5"/>
-      <line x1="793" y1="190" x2="793" y2="240" stroke="#59738a" stroke-opacity="0.5"/>
-      <path d="M793 229 C832 226 843 205 875 211 S927 238 959 217 S1010 178 1082 193" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
-      <circle cx="875" cy="211" r="5" fill="#55d6be"/>
-      <circle cx="959" cy="217" r="5" fill="#65c8d5"/>
-      <circle cx="1082" cy="193" r="5" fill="#7aa7ff"/>
-
-      <text x="793" y="278" fill="#7893aa" font-size="12">BASELINE</text>
-      <path d="M866 273h34" stroke="#466077" stroke-width="2"/>
-      <text x="914" y="278" fill="#7893aa" font-size="12">VALIDATE</text>
-      <path d="M987 273h34" stroke="#466077" stroke-width="2"/>
-      <text x="1034" y="278" fill="#a7f3e5" font-size="12">LOCK</text>
+  <rect width="960" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="960" height="320" rx="24" fill="url(#grid)"/>
+  <path d="M572 320C620 240 562 104 708 0M656 320C710 236 668 106 820 0M756 320C782 234 796 118 954 44" fill="none" stroke="#84C8D7" stroke-opacity=".1" stroke-width="1.5"/>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif">
+    <rect x="52" y="36" width="128" height="28" rx="14" fill="#71DDCA" fill-opacity=".12" stroke="#71DDCA" stroke-opacity=".32"/>
+    <circle cx="69" cy="50" r="3.5" fill="#86E8D5"/>
+    <text x="81" y="55" font-size="12" font-weight="600" letter-spacing="1.4" fill="#AEF1E3">CODEX SKILL</text>
+    <text x="52" y="120" font-size="40" font-weight="650" fill="#F7FAFF">从问题出发，</text>
+    <text x="52" y="174" font-size="40" font-weight="650" fill="#B3F0E1">让结论可复现。</text>
+    <text x="54" y="217" font-size="18" fill="#C4D5E6">规则核验 · 建模验证 · 论文整合 · 提交审计</text>
+    <path d="M54 254H98" stroke="#72E1CE" stroke-width="3" stroke-linecap="round"/>
+    <text x="110" y="259" font-size="12" letter-spacing="1.5" fill="#A9C2D8">GRADUATE MATHEMATICAL MODELING</text>
+    <g>
+      <rect x="616" y="36" width="292" height="248" rx="18" fill="#101F36" stroke="#54718B" stroke-opacity=".6"/>
+      <text x="640" y="65" font-size="11" letter-spacing="1.7" fill="#9AB5D0">RESEARCH WORKFLOW</text>
+      <circle cx="882" cy="61" r="3" fill="#85DFCA"/>
+      <path d="M644 82H880" stroke="#30445E"/>
+      <path d="M654 118V224" stroke="#557C95" stroke-width="2"/>
+      <circle cx="654" cy="113" r="10" fill="#173E56" stroke="#83C8F5"/>
+      <circle cx="654" cy="170" r="10" fill="#153F4D" stroke="#79DCC7"/>
+      <circle cx="654" cy="227" r="10" fill="#18324F" stroke="#A7C3F7"/>
+      <path d="m650 113 3 3 5-6m-8 60 3 3 5-6m-8 60 3 3 5-6" fill="none" stroke="#E2F4FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="678" y="111" font-size="17" font-weight="600" fill="#EDF4FF">规则与问题</text>
+      <text x="678" y="131" font-size="12" fill="#ABC0D6">来源 · 假设 · 评价标准</text>
+      <text x="678" y="168" font-size="17" font-weight="600" fill="#EDF4FF">模型与验证</text>
+      <text x="678" y="188" font-size="12" fill="#ABC0D6">基线 · 对照 · 稳健性</text>
+      <text x="678" y="225" font-size="17" font-weight="600" fill="#EDF4FF">论文与交付</text>
+      <text x="678" y="245" font-size="12" fill="#ABC0D6">图表 · 复核 · 锁稿</text>
     </g>
   </g>
-
-  <rect x="1" y="1" width="1198" height="358" rx="27" fill="none" stroke="#c7e4f6" stroke-opacity="0.1" stroke-width="2"/>
+  <rect x=".75" y=".75" width="958.5" height="318.5" rx="23.25" fill="none" stroke="#9CB9D0" stroke-opacity=".2" stroke-width="1.5"/>
 </svg>
