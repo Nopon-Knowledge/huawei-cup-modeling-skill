@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="assets/readme-banner.svg"><img src="assets/readme-banner.svg" alt="从问题出发，让结论可复现。华为杯研究生数模助手：规则、模型、论文与提交。" width="960" /></a>
+  <a href="assets/readme-banner.svg"><img src="assets/readme-banner.svg" alt="去除 AI 痕迹，让论文表达更自然。定位模板感、改写机械表达、复核事实原意。" width="960" /></a>
 </p>
 
 <h1 align="center">华为杯研究生数模助手</h1>
 
 <p align="center">
-  面向中国研究生数学建模竞赛的中文 Skill<br />
-  <strong>核验规则 · 建立基线 · 验证结果 · 整合论文 · 审计提交</strong>
+  <strong>去除 AI 痕迹，让论文表达更自然。</strong><br />
+  面向华为杯论文的 AI 痕迹评阅、去 AI 味与学术表达润色
 </p>
 
 <p align="center">
@@ -17,29 +17,61 @@
 </p>
 
 <p align="center">
+  <a href="#去除-ai-痕迹"><strong>去除 AI 痕迹</strong></a> &nbsp;·&nbsp;
   <a href="#快速开始">快速开始</a> &nbsp;·&nbsp;
+  <a href="#ai-痕迹检测与分级">检测与分级</a> &nbsp;·&nbsp;
   <a href="#竞赛工作流">竞赛工作流</a> &nbsp;·&nbsp;
   <a href="#图表与论文">图表与论文</a> &nbsp;·&nbsp;
-  <a href="#脚本工具">脚本工具</a> &nbsp;·&nbsp;
-  <a href="#使用边界">使用边界</a>
+  <a href="#脚本工具">脚本工具</a>
 </p>
 
 ---
 
-把分散的竞赛工作串起来：从带来源的规则快照，到能运行的模型、可追溯的图表，再到锁稿后的文件核验。队伍始终主导选题、假设与结论，Skill 帮助组织过程、检查证据、减少遗漏。
+本 Skill 重点提供 **“去除 AI 痕迹”** 功能：找出重复套话、机械段落与空泛结论，改写为具体、连贯的学术表达，并对照核查事实、公式和引用。
+
+同时支持规则核验、可复现建模、图表排版与提交审计，覆盖华为杯从准备到交付的工作流程。
 
 <table align="center">
   <tr>
-    <th align="center" width="280">规则有据</th>
-    <th align="center" width="280">结果可查</th>
-    <th align="center" width="280">交付有序</th>
+    <th align="center" width="280">定位问题</th>
+    <th align="center" width="280">完成改写</th>
+    <th align="center" width="280">复核原意</th>
   </tr>
   <tr>
-    <td align="center">核验规则<br />标注缺口</td>
-    <td align="center">跑通基线<br />追溯结果</td>
-    <td align="center">统一图表<br />复核提交</td>
+    <td align="center">原文证据<br />修改优先级</td>
+    <td align="center">减少套话<br />梳理论证</td>
+    <td align="center">数据公式<br />引用与边界</td>
   </tr>
 </table>
+
+## 去除 AI 痕迹
+
+**从词句到篇章，减少模板感，保留队伍自己的研究判断。** 支持局部段落、图题、摘要、结论和整篇论文；已有写作样例时，保留作者的术语、人称与表达习惯。
+
+<table align="center">
+  <tr><th align="center">问题</th><th align="center">如何改写</th></tr>
+  <tr><td>措辞</td><td>删去无信息的过渡和总结，明确主语、动作及实际逻辑关系。</td></tr>
+  <tr><td>段落</td><td>按论证需要拆分或合并，减少机械的“总—分—总”。</td></tr>
+  <tr><td>判断</td><td>写清有依据的模型取舍与适用范围，核对精度和误差表达。</td></tr>
+  <tr><td>图文</td><td>图题说明条件或已验证发现，结论直接回答问题，避免复读摘要。</td></tr>
+  <tr><td>风格</td><td>保留真实的解释与表达习惯，让每句话包含具体信息。</td></tr>
+</table>
+
+### 改写前后
+
+<table align="center">
+  <tr><th align="center" width="420">润色前 · 重复推进</th><th align="center" width="420">润色后 · 直接表达</th></tr>
+  <tr>
+    <td>本实验中，模型 A 的预测误差低于模型 B。在此基础上，我们进一步得出模型 A 优于模型 B 的结论。综上所述，模型 A 表现出更好的预测性能。</td>
+    <td>本实验中，模型 A 的预测误差低于模型 B。</td>
+  </tr>
+</table>
+
+<p align="center"><sub>示例仅演示表达改写：删除两次重复总结，保留比较对象、指标方向和实验范围；不代表结果已经核验。</sub></p>
+
+默认交付 **改写稿 + 句级修改对照 + 实际存在的证据缺口**。可直接润色，也可先做 [AI 痕迹检测](#ai-痕迹检测与分级)，按“原句 → 修改理由 → 改写后 → 事实复核”处理问题。八类检查和完整方法见 [学术表达指南](huawei-cup-modeling/references/academic-writing.md)。
+
+这里的“去除 AI 痕迹”指学术表达去模板化，保留必要的 AI 使用披露，不承诺通过检测。实时赛题须先核验当届 AI 使用范围。
 
 ## 快速开始
 
@@ -67,17 +99,26 @@ Codex 会自动检测 Skill 变更；若未出现，可重启。目录位置与�
 
 </details>
 
-### 2. 从一个具体任务开始
+### 2. 给论文去 AI 味
 
 ```text
-$huawei-cup-modeling 帮我核对 2026 华为杯报名、赛程和 AI 使用规则，
-区分已确认、尚未发布和仅有往届先例的信息，并附上来源与核验日期。
+$huawei-cup-modeling 请给这份华为杯论文去除 AI 痕迹：
+逐段检查，定位到句子，处理套话、机械结构、空泛图题和重复结论。
+保留原意、数据、公式、引用和已有写作风格，
+给出改写稿、原句与修改对照、事实复核和未完成的核验项。
 ```
 
-Skill 会先识别任务阶段、整理已有材料，再给出当前可执行的下一步。以上为 Codex 调用方式；在 ChatGPT 桌面端可用 `@` 选择已安装的 Skill，详见 [官方文档](https://learn.chatgpt.com/docs/build-skills)。
+提供待改写文本或文件即可开始，局部段落也可以处理。Skill 会先识别任务阶段与规则范围，再完成相应润色。以上为 Codex 调用方式；在 ChatGPT 桌面端可用 `@` 选择已安装的 Skill，详见 [官方文档](https://learn.chatgpt.com/docs/build-skills)。
 
 <details>
-<summary><strong>更多示例：往届题训练、三人协作、图表润色、提交审计</strong></summary>
+<summary><strong>其他竞赛任务：规则核验、往届题训练、团队规划与提交审计</strong></summary>
+
+**规则核验**
+
+```text
+$huawei-cup-modeling 帮我核对当届华为杯报名、赛程和 AI 使用规则，
+区分已确认、尚未发布和仅有往届先例的信息，并附上来源与核验日期。
+```
 
 **公开往届题训练**
 
@@ -109,6 +150,60 @@ $huawei-cup-modeling 审计这份最终 PDF；
 ```
 
 </details>
+
+## AI 痕迹检测与分级
+
+需要先找到重点问题时，可使用 **AI 痕迹检测 → 定向改写 → 事实复核** 的流程。检测按九个维度观察，第十项综合评估；只要求检测时，先给报告，不改原文。
+
+全文任务按章节逐段扫描，记录已检查段落和未完成位置。报告区分已确认问题、待核验疑点与已排除的正常表达；每条问题都能定位到句子或图表，不把候选疑点直接算成问题。
+
+<details>
+<summary><strong>查看十项检测内容</strong></summary>
+
+<table align="center">
+  <tr><th align="center">维度</th><th align="center">主要检查内容</th></tr>
+  <tr><td>01 · 词汇</td><td>高频套话、空洞形容词、缺少具体动作的模板化动词。</td></tr>
+  <tr><td>02 · 句式</td><td>句法重复、无效过渡、被动表达是否遮蔽必要主体。</td></tr>
+  <tr><td>03 · 段落</td><td>均匀段长与固定结构是否导致冗余或打断论证。</td></tr>
+  <tr><td>04 · 逻辑</td><td>推理跳步、过度概括、遗漏反例或适用边界。</td></tr>
+  <tr><td>05 · 作者表达</td><td>需要解释选择时，是否缺少真实判断依据与取舍。</td></tr>
+  <tr><td>06 · 数据</td><td>有效数字、误差含义与样本或验证范围。</td></tr>
+  <tr><td>07 · 图表</td><td>空泛图题、配色辨识困难、单位与标注缺失。</td></tr>
+  <tr><td>08 · 结构</td><td>摘要信息不足、章节未回应题目、结论无信息复读。</td></tr>
+  <tr><td>09 · 引用</td><td>引文与主张是否对应、文献相关性及实际核验状态。</td></tr>
+  <tr><td>10 · 综合</td><td>汇总 0–100 分、A–E 等级、材料覆盖与修改优先级。</td></tr>
+</table>
+
+</details>
+
+```text
+$huawei-cup-modeling 检测这篇华为杯论文的 AI 痕迹：
+按十项流程逐段检查，定位到句子，报告扫描进度、证据与修改建议。
+覆盖充分时给出综合分和 A–E 等级；有精确标注时计算问题文本覆盖率。
+材料不足的项标为待核验；先给报告，不修改原文。
+```
+
+A–E 从低到高表示**模板化表达程度**。综合分是规则式编辑量表得分，不能换算为 AI 生成概率；只有片段或材料覆盖不足时，暂不给全文等级。规范的引用格式、默认配色、被动句和流畅逻辑本身不扣分。
+
+### 体检报告包含什么
+
+<table align="center">
+  <tr><th align="center">内容</th><th align="center">可复核的依据</th></tr>
+  <tr><td>检查进度</td><td>已检查段落、未完成章节，图表与引用的实际核验状态。</td></tr>
+  <tr><td>问题位置</td><td>问题编号、句级原文、判断依据、待核验或已排除的原因。</td></tr>
+  <tr><td>修改对照</td><td>需要润色时提供原句、修改理由、改写后及事实复核结果。</td></tr>
+  <tr><td>覆盖统计</td><td>根据固定文本和标注区间去重计数，保留分子、分母与文本哈希。</td></tr>
+</table>
+
+**问题文本覆盖率**表示已确认问题涉及多少已检查文字，与 AI 来源概率无关。支持本地脚本复算；片段或未完成扫描不输出全文比例，待核验内容单列。
+
+评分公式、等级阈值、证据记录和报告格式见 [AI 痕迹评阅指南](huawei-cup-modeling/references/ai-trace-review.md)。
+
+### 交稿前集中自查
+
+在内部锁稿前安排体检、定向改写、人工复核和最终导出，同时核对实际 AI 使用记录与当届披露要求。可预留约半天并按论文规模调整；时间不足时先处理关键问题，如实保留未检查范围。
+
+本科国赛与华为杯的规则分别核验。声明放在哪里、详情材料叫什么、哪些情形有例外，都以**对应赛事当届官方文件**为准；[规则核验记录](huawei-cup-modeling/references/current-rules.md)说明了两者的区分。
 
 ## 竞赛工作流
 
@@ -143,7 +238,15 @@ $huawei-cup-modeling 审计这份最终 PDF；
 
 ## 脚本工具
 
-提供两个无第三方 Python 依赖的本地辅助脚本。以下命令在仓库根目录执行，**全大写参数值需要替换**为真实路径或已核验条件。
+提供三个无第三方 Python 依赖的本地辅助脚本。以下命令在仓库根目录执行，**全大写参数值需要替换**为真实路径或已核验条件。
+
+### 复算体检覆盖率
+
+```bash
+python3 huawei-cup-modeling/scripts/measure_review_coverage.py PAPER.txt ANNOTATIONS.json
+```
+
+读取冻结的 UTF-8 文本与标注 JSON，核验 SHA-256，按字符区间并集计算扫描进度、确认问题与待核验覆盖率。结果以 JSON 输出，输入文件保持原样。脚本只负责计数，语义问题由评阅过程识别；标注字段与统计口径见 [评阅指南](huawei-cup-modeling/references/ai-trace-review.md)。
 
 ### 初始化竞赛工作区
 
@@ -198,7 +301,7 @@ Poppler 需独立安装，本仓库不捆绑其二进制。工具缺失时，脚
 python3 -m unittest discover -s huawei-cup-modeling/tests -v
 ```
 
-测试覆盖初始化回滚、链接防覆盖、已有清单保护、年度参数、字节边界、PDF 结构、身份词扫描和哈希验证。
+测试覆盖初始化回滚、链接防覆盖、已有清单保护、年度参数、字节边界、PDF 结构、身份词扫描、哈希验证，以及区间去重、片段覆盖限制、Unicode 偏移和标注版本校验。
 
 <details>
 <summary><strong>项目结构与资料入口</strong></summary>
@@ -214,11 +317,16 @@ python3 -m unittest discover -s huawei-cup-modeling/tests -v
     │   ├── current-rules.md         # 带核验日期的年度快照
     │   ├── contest-operations.md    # 分工、时间线与检查点
     │   ├── figures-and-tables.md    # 图表质量、居中与导出
+    │   ├── academic-writing.md      # 去 AI 味、表达润色与事实对照
+    │   ├── ai-trace-review.md       # 九维检测、综合评分与 A–E 分级
     │   └── paper-and-compliance.md  # 论文、引用与提交审计
     ├── scripts/
     │   ├── init_competition_workspace.py
+    │   ├── measure_review_coverage.py
     │   └── preflight_submission.py
-    └── tests/test_scripts.py
+    └── tests/
+        ├── test_scripts.py
+        └── test_review_coverage.py
 ```
 
 </details>
@@ -232,7 +340,7 @@ python3 -m unittest discover -s huawei-cup-modeling/tests -v
 <details>
 <summary><strong>数据、隐私与哈希说明</strong></summary>
 
-- 两个 Python 脚本自身不联网。通过 Codex 使用 Skill 时，材料可能由用户配置的 AI 服务处理，应遵守相应的数据控制与保留政策。
+- 三个 Python 脚本自身不联网。通过 Codex 使用 Skill 时，材料可能由用户配置的 AI 服务处理，应遵守相应的数据控制与保留政策。
 - 初始化工作区的 `.gitignore` 默认忽略竞赛材料目录。忽略规则不是访问控制，正式比赛材料仍应保存在受控位置。
 - AI 使用日志只记录必要摘要，公开前须脱敏；不保存无关的完整对话。
 - 哈希清单默认隐藏绝对路径与身份词原文，但仍含文件名、大小、时间和文件哈希，比赛期间不要公开。
@@ -260,6 +368,6 @@ python3 -m unittest discover -s huawei-cup-modeling/tests -v
 ---
 
 <p align="center">
-  <strong>让每个结论有据可查，让每次交付有迹可循。</strong><br />
-  <sub>规则有来源 · 模型可复现 · 图表可读 · 提交可核验</sub>
+  <strong>让论文表达自然，让研究证据完整。</strong><br />
+  <sub>定位模板感 · 改写机械表达 · 保留研究判断 · 复核事实原意</sub>
 </p>

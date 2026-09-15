@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title desc">
   <title id="title">华为杯研究生数模助手</title>
-  <desc id="desc">从问题出发，让结论可复现。连接规则核验、建模验证、论文整合与提交审计的竞赛工作流。</desc>
+  <desc id="desc">去除 AI 痕迹，让论文表达更自然。定位模板感、改写机械表达、复核事实原意，保留队伍自己的研究判断。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#10213C"/>
@@ -17,14 +17,14 @@
     <rect x="52" y="36" width="128" height="28" rx="14" fill="#71DDCA" fill-opacity=".12" stroke="#71DDCA" stroke-opacity=".32"/>
     <circle cx="69" cy="50" r="3.5" fill="#86E8D5"/>
     <text x="81" y="55" font-size="12" font-weight="600" letter-spacing="1.4" fill="#AEF1E3">CODEX SKILL</text>
-    <text x="52" y="120" font-size="40" font-weight="650" fill="#F7FAFF">从问题出发，</text>
-    <text x="52" y="174" font-size="40" font-weight="650" fill="#B3F0E1">让结论可复现。</text>
-    <text x="54" y="217" font-size="18" fill="#C4D5E6">规则核验 · 建模验证 · 论文整合 · 提交审计</text>
+    <text x="52" y="120" font-size="40" font-weight="650" fill="#F7FAFF">去除 AI 痕迹，</text>
+    <text x="52" y="174" font-size="40" font-weight="650" fill="#B3F0E1">让论文表达更自然。</text>
+    <text x="54" y="217" font-size="18" fill="#C4D5E6">检测模板感 · 改写机械表达 · 复核事实</text>
     <path d="M54 254H98" stroke="#72E1CE" stroke-width="3" stroke-linecap="round"/>
-    <text x="110" y="259" font-size="12" letter-spacing="1.5" fill="#A9C2D8">GRADUATE MATHEMATICAL MODELING</text>
+    <text x="110" y="259" font-size="12" letter-spacing="1.5" fill="#A9C2D8">ACADEMIC WRITING · MODELING SKILL</text>
     <g>
       <rect x="616" y="36" width="292" height="248" rx="18" fill="#101F36" stroke="#54718B" stroke-opacity=".6"/>
-      <text x="640" y="65" font-size="11" letter-spacing="1.7" fill="#9AB5D0">RESEARCH WORKFLOW</text>
+      <text x="640" y="65" font-size="11" letter-spacing="1.7" fill="#9AB5D0">EDIT WITH EVIDENCE</text>
       <circle cx="882" cy="61" r="3" fill="#85DFCA"/>
       <path d="M644 82H880" stroke="#30445E"/>
       <path d="M654 118V224" stroke="#557C95" stroke-width="2"/>
@@ -32,12 +32,12 @@
       <circle cx="654" cy="170" r="10" fill="#153F4D" stroke="#79DCC7"/>
       <circle cx="654" cy="227" r="10" fill="#18324F" stroke="#A7C3F7"/>
       <path d="m650 113 3 3 5-6m-8 60 3 3 5-6m-8 60 3 3 5-6" fill="none" stroke="#E2F4FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="678" y="111" font-size="17" font-weight="600" fill="#EDF4FF">规则与问题</text>
-      <text x="678" y="131" font-size="12" fill="#ABC0D6">来源 · 假设 · 评价标准</text>
-      <text x="678" y="168" font-size="17" font-weight="600" fill="#EDF4FF">模型与验证</text>
-      <text x="678" y="188" font-size="12" fill="#ABC0D6">基线 · 对照 · 稳健性</text>
-      <text x="678" y="225" font-size="17" font-weight="600" fill="#EDF4FF">论文与交付</text>
-      <text x="678" y="245" font-size="12" fill="#ABC0D6">图表 · 复核 · 锁稿</text>
+      <text x="678" y="111" font-size="17" font-weight="600" fill="#EDF4FF">定位 AI 痕迹</text>
+      <text x="678" y="131" font-size="12" fill="#ABC0D6">九维证据 · 分级评阅</text>
+      <text x="678" y="168" font-size="17" font-weight="600" fill="#EDF4FF">改写模板表达</text>
+      <text x="678" y="188" font-size="12" fill="#ABC0D6">删套话 · 调结构 · 明取舍</text>
+      <text x="678" y="225" font-size="17" font-weight="600" fill="#EDF4FF">复核事实原意</text>
+      <text x="678" y="245" font-size="12" fill="#ABC0D6">数据 · 公式 · 引用 · 边界</text>
     </g>
   </g>
   <rect x=".75" y=".75" width="958.5" height="318.5" rx="23.25" fill="none" stroke="#9CB9D0" stroke-opacity=".2" stroke-width="1.5"/>
